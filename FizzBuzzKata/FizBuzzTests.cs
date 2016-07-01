@@ -14,5 +14,14 @@ namespace FizzBuzzKata
             FizzBuzz fizzBuzz = new FizzBuzz(number);
             Assert.AreEqual(expected, fizzBuzz.Value());
         }
+        
+        [TestMethod]
+        public void TestReturnsFizzIfDivisibleByThree()
+        {
+            string expected = "Fizz";
+            int number = 3;
+            FizzBuzz fizzBuzz = new FizzBuzz(number);
+            Assert.AreEqual(expected, fizzBuzz.Value());
+        }
     }
 }
