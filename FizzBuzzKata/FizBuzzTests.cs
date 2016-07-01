@@ -7,7 +7,7 @@ namespace FizzBuzzKata
     {
 
         [TestMethod]
-        public void TestReturnsNumbers()
+        public void TestReturnsNumbersIfNotDivisibleByFiveOrThree()
         {
             string expected = "1";
             int number = 1;
