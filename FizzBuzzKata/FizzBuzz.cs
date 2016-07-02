@@ -11,9 +11,19 @@
 
         public string Value()
         {
-            return IsDivisibleByThree() ? "Fizz" :
-               IsDivisibleByFive() ? "Buzz" : 
-               _number.ToString();
+            if (IsDivisibleByThree() && IsDivisibleByFive())
+            {
+                return "FizzBuzz";
+            }
+            if (IsDivisibleByThree())
+            {
+                return "Fizz";
+            }
+            if (IsDivisibleByFive())
+            {
+                return "Buzz";
+            }
+            return _number.ToString();
         }
 
         private bool IsDivisibleByThree()
