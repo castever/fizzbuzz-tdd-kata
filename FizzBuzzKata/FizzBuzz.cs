@@ -2,7 +2,7 @@
 {
     internal class FizzBuzz
     {
-        private int _number;
+        private readonly int _number;
 
         public FizzBuzz(int number)
         {
