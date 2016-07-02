@@ -11,7 +11,8 @@
 
         public string Value()
         {
-            return _number % 3 == 0 ? "Fizz" : _number.ToString();
+            return _number % 3 == 0 ? "Fizz" :
+                _number % 5 == 0 ? "Buzz" : _number.ToString();
         }
     }
 }

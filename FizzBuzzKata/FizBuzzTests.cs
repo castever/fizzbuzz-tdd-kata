@@ -17,5 +17,11 @@ namespace FizzBuzzKata
         {
             Assert.AreEqual("Fizz", new FizzBuzz(3).Value());
         }
+
+        [TestMethod]
+        public void TestReturnsBuzzIfDivisibleByFive()
+        {
+            Assert.AreEqual("Buzz", new FizzBuzz(5).Value());
+        }
     }
 }
