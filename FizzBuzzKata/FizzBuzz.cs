@@ -6,24 +6,25 @@
 
         public FizzBuzz(int number)
         {
-            this._number = number;
+            _number = number;
         }
 
         public string Value()
         {
-            if (IsDivisibleByThree() && IsDivisibleByFive())
-            {
-                return "FizzBuzz";
-            }
+            string value = "";
             if (IsDivisibleByThree())
             {
-                return "Fizz";
+                value = "Fizz";
             }
             if (IsDivisibleByFive())
             {
-                return "Buzz";
+                value +=  "Buzz";
             }
-            return _number.ToString();
+            if (value.Equals(""))
+            {
+                value =  _number.ToString();
+            }
+            return value;
         }
 
         private bool IsDivisibleByThree()
